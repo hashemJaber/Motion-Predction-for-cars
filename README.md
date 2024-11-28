@@ -1,5 +1,3 @@
-# Motion-Predction-for-cars
-Motion Prediction with ArgoVerse 2 Dataset
 # Motion Prediction for Cars
 Motion Prediction with ArgoVerse 2 Dataset
 
