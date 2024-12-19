@@ -1,5 +1,6 @@
 # Motion Prediction for Cars
-Motion Prediction with ArgoVerse 2 Dataset
+
+<img width="839" alt="Screenshot 2024-12-18 at 10 09 06 PM" src="https://github.com/user-attachments/assets/7aa83810-9e28-4c6b-a461-59ce9a7e25a3" />
 
 This repository is a work in progress, I will provides tools for preprocessing the ArgoVerse 2 motion forecasting dataset to prepare it for training motion prediction models. The code focuses on generating appropriate labels by analyzing global changes in position and heading across the dataset and discretizing these changes into meaningful bins. Then passing the data to the models for training/inference.
 
@@ -41,6 +42,7 @@ Accurate motion prediction is essential for autonomous vehicles to navigate safe
   - `pyarrow` or `fastparquet` (for reading `.parquet` files)
 
 Install the required libraries using:
+
 
 ```
 pip install pandas numpy matplotlib torch pyarrow # for now 
@@ -137,6 +139,9 @@ dataloader = DataLoader(dataset, batch_size=32, shuffle=True)
 Configuration
 
 ```
+<img width="638" alt="Screenshot 2024-12-18 at 10 13 09 PM" src="https://github.com/user-attachments/assets/f4f52126-1d54-4621-8d50-9a0501709a60" />
+<img width="787" alt="Screenshot 2024-12-18 at 10 14 47 PM" src="https://github.com/user-attachments/assets/f06f0370-0541-471d-a10b-9048c39a0086" />
+
 Parameters:
 covered_time: Number of observed timesteps (e.g., 80)
 future_time: Number of future timesteps to predict (e.g., 30)
